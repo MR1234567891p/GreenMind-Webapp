@@ -88,7 +88,7 @@ if page == "Home":
     st.markdown("""
 <style>
 .hero-title {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 800;
     text-align: center;
     background: linear-gradient(90deg, #00FF99, #00BFFF, #A5FFD6);
@@ -103,7 +103,7 @@ if page == "Home":
 /* Responsive adjustment for small screens */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 36px;
+        font-size: 42px;
         letter-spacing: 1px;
     }
 }
@@ -387,6 +387,7 @@ elif page == "Contact":
 #  FOOTER 
 
 st.markdown("<br><hr><center>Made with 💚 by GreenMind Team — 2025</center>", unsafe_allow_html=True)
+
 
 
 
