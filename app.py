@@ -86,44 +86,49 @@ st.sidebar.caption("🌱 GreenMind © 2025")
 if page == "Home":
     
     st.markdown("""
-    <style>
-    .hero-title {
-        font-size: 50px;
-        font-weight: 800;
-        text-align: center;
-        background: linear-gradient(90deg, #00FF99, #00BFFF, #A5FFD6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: gradientMove 6s ease-in-out infinite;
-        letter-spacing: 2px;
-    }
+<style>
+.hero-title {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(90deg, #00FF99, #00BFFF, #A5FFD6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease-in-out infinite;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
 
-    @media (max-width: 768px) {
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
     .hero-title {
         font-size: 36px;
         letter-spacing: 1px;
     }
 }
-    @keyframes gradientMove {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    </style>
 
-    <div style="text-align:center; padding: 40px 0;">
-        <h1 class="hero-title">🌱 GreenMind </h1>
-        <h3 style='color:#00FF99; font-weight:400;'>
-            <b>Beyond Plastic. Beyond Ordinary</b>.
-        </h3>
-        <p style='max-width:800px; margin:auto; color:#C8E6F9; font-size:19px;'>
-            Every day, over <b>1,700 tonnes</b> of plastic waste are generated in Bangladesh - 
-            with less than 40% recycled. GreenMind helps brands turn this challenge into a 
-            business advantage by identifying affordable, credible, and high-impact 
-            alternatives to plastic.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
+
+<div style="text-align:center; padding: 40px 0;">
+    <h1 class="hero-title">🌱 GreenMind</h1>
+    <h3 style='color:#00FF99; font-weight:400;'>
+        <b>Beyond Plastic. Beyond Ordinary</b>.
+    </h3>
+    <p style='max-width:800px; margin:auto; color:#C8E6F9; font-size:19px;'>
+        Every day, over <b>1,700 tonnes</b> of plastic waste are generated in Bangladesh - 
+        with less than 40% recycled. GreenMind helps brands turn this challenge into a 
+        business advantage by identifying affordable, credible, and high-impact 
+        alternatives to plastic.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
 
     st.markdown("---")
 
@@ -382,5 +387,6 @@ elif page == "Contact":
 #  FOOTER 
 
 st.markdown("<br><hr><center>Made with 💚 by GreenMind Team — 2025</center>", unsafe_allow_html=True)
+
 
 
