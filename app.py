@@ -97,6 +97,13 @@ if page == "Home":
         animation: gradientMove 6s ease-in-out infinite;
         letter-spacing: 2px;
     }
+
+    @media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+}
     @keyframes gradientMove {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
@@ -375,4 +382,5 @@ elif page == "Contact":
 #  FOOTER 
 
 st.markdown("<br><hr><center>Made with 💚 by GreenMind Team — 2025</center>", unsafe_allow_html=True)
+
 
